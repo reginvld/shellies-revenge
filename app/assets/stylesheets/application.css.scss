@@ -17,14 +17,51 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Typography Styles
 h1, h2, h3 {
     font-family: 'Permanent Marker', cursive;
 }
 
-body, .navbar {
-  //Gradient provided by @_ighosh at uiGradients.com
-  background: #00c6ff; /* fallback for old browsers */
+h1 {
+    font-size: 350%;
+}
+
+body {
+  background: #ffbdbd;
 }
 .navbar {
   border: none;
+  background: url(http://i64.tinypic.com/246j7gp.gif);
+  background-repeat: repeat-x;
+}
+
+.navbar-default {
+  background: #ffbdbd;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover { 
+  color: white;
+  opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover{
+  color: white;
+  opacity: 0.75;
+}
+
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+footer { 
+    display: block;
+    padding: 20px;
 }

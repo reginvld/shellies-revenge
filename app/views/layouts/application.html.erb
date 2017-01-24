@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-static-top" role="navigation">
   <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -19,17 +19,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">home</a>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">shellie's revenge</a>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="/blog">blog</a></li>
         <li><a href="/about">about</a></li>
+        <li><a href="/contact">contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
+
     <div class="container">
       <%= yield %>
     </div>
   </body>
+  
+  <footer id="footer">
+  titsitsitsits
+</footer>
+
 </html>
