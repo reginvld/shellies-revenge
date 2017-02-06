@@ -37,9 +37,9 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "cart", "/cart" %></li>
-        <li><%= link_to "login", "/login" %></li>
-        <li><%= link_to "newsletter", "/newsletter" %></li>
+        <li><%= link_to "cart", cart_path %></li>
+        <li><%= link_to "login", login_path %></li>
+        <li><%= link_to "newsletter", newsletter_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -54,17 +54,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     <%= link_to "/", class: "navbar-brand" do %>
+     <%= link_to root_path, class: "navbar-brand" do %>
        <i class="fa fa-crosshairs"></i>
        home
        <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "shop", "/shop" %></li>
-        <li><%= link_to "blog", "/blog" %></li>
-        <li><%= link_to "looks", "/looks" %></li>
-        <li><%= link_to "contact", "/contact" %></li>
+        <li><%= link_to "shop", shop_path %></li>
+        <li><%= link_to "blog", blog_path %></li>
+        <li><%= link_to "looks", looks_path %></li>
+        <li><%= link_to "contact", contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
