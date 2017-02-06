@@ -10,4 +10,19 @@ class PagesController < ApplicationController
     
     def contact
     end
+    
+    def shop
+    end
+    
+    def looks
+    end
+    
+    def cart
+    end
+    
+    def login
+    end
+    
+    def newsletter
+    end
 end
