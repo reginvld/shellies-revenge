@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'blog', to: 'pages#blog'
-  get 'contact', to: 'pages#contact'
   get 'shop', to: 'pages#shop'
   get 'looks', to: 'pages#looks'
   get 'cart', to: 'pages#cart'
