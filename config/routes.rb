@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'login', to: 'pages#login'
   get 'newsletter', to: 'pages#newsletter'
   resources :contacts
+  get 'contact-us', to: 'contacts#new'
 end
