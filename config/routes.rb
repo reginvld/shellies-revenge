@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get 'signup', to: 'pages#signup'
   get 'login', to: 'pages#login'
   get 'newsletter', to: 'pages#newsletter'
-  resources :contacts, only :create
+  resources :contacts, only: :create
   get 'contact-us', to: 'contacts#new', as: 'new_contact'
 end
