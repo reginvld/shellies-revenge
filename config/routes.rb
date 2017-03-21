@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get 'cart', to: 'pages#cart'
   get 'signup', to: 'pages#signup'
   get 'login', to: 'pages#login'
-  get 'newsletter', to: 'subscribers#index'
   resources :contacts, only: :create
   get 'contact-us', to: 'contacts#new', as: 'new_contact'
+  resources :subscribers
+  root 'subscriber#index'
 end
