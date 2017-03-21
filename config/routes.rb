@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'subscribers/index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
   get 'about', to: 'pages#about'
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   get 'cart', to: 'pages#cart'
   get 'signup', to: 'pages#signup'
   get 'login', to: 'pages#login'
-  get 'newsletter', to: 'pages#newsletter'
+  get 'newsletter', to: 'subscribers#index'
   resources :contacts, only: :create
   get 'contact-us', to: 'contacts#new', as: 'new_contact'
 end
